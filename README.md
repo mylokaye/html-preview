@@ -1,6 +1,10 @@
+![VS HTML Preview banner](images/html-preview.jpg)
+
 # VS HTML Preview
 
-Preview an HTML file beside its editor in Visual Studio Code.
+Preview HTML files in a browser-like VS Code panel, including GitHub remote workspaces.
+
+[GitHub repository](https://github.com/mylokaye/vs-preview) · [Mylo Kaye's website](https://mylokaye.me)
 
 ## Features
 
