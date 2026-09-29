@@ -9,7 +9,14 @@
     "type": "git",
     "url": "https://github.com/mylokaye/vs-preview.git"
   },
+  "bugs": {
+    "url": "https://github.com/mylokaye/vs-preview/issues"
+  },
   "homepage": "https://mylokaye.me",
+  "galleryBanner": {
+    "color": "#4338CA",
+    "theme": "dark"
+  },
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "vscode": "^1.85.0"
@@ -20,12 +27,29 @@
   ],
   "keywords": [
     "html",
+    "htm",
+    "html preview",
+    "html viewer",
     "preview",
+    "live preview",
+    "browser preview",
     "browser",
+    "web preview",
     "webview",
+    "web development",
+    "frontend",
+    "css",
+    "javascript",
     "github",
+    "github repositories",
+    "github remote",
     "remote workspace",
-    "live preview"
+    "remote development",
+    "virtual workspace",
+    "vscode web",
+    "static website",
+    "web page preview",
+    "live reload"
   ],
   "main": "./extension.js",
   "browser": "./extension.js",
@@ -36,9 +60,6 @@
   "capabilities": {
     "virtualWorkspaces": true
   },
-  "activationEvents": [
-    "onCommand:vsPreview.openPreview"
-  ],
   "contributes": {
     "commands": [
       {
