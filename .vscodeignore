@@ -1,1 +1,8 @@
 .vscode/**
+test/**
+*.vsix
+.DS_Store
+.gitignore
+node_modules/**
+.playwright-cli/**
+output/**

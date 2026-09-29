@@ -2,7 +2,7 @@
   "name": "vs-html-preview",
   "displayName": "VS HTML Preview",
   "description": "Preview HTML files in a browser-like VS Code panel, including GitHub remote workspaces.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "MyloKaye",
   "icon": "icon.png",
   "repository": {
@@ -58,13 +58,21 @@
     "ui"
   ],
   "capabilities": {
-    "virtualWorkspaces": true
+    "virtualWorkspaces": true,
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "Static previews work in Restricted Mode. Workspace scripts and external network resources require trust."
+    }
   },
   "contributes": {
     "commands": [
       {
         "command": "vsPreview.openPreview",
         "title": "Preview HTML"
+      },
+      {
+        "command": "vsPreview.refresh",
+        "title": "Refresh HTML Preview"
       }
     ],
     "menus": {
@@ -81,7 +89,53 @@
           "when": "resourceLangId == html",
           "group": "navigation"
         }
+      ],
+      "explorer/context": [
+        {
+          "command": "vsPreview.openPreview",
+          "when": "resourceExtname =~ /\\.(html|htm)$/i",
+          "group": "navigation"
+        }
       ]
+    },
+    "configuration": {
+      "title": "VS HTML Preview",
+      "properties": {
+        "vsPreview.refreshMode": {
+          "type": "string",
+          "enum": [
+            "onChange",
+            "onSave",
+            "manual"
+          ],
+          "default": "onChange",
+          "description": "Refresh while editing HTML, when saving files, or only manually."
+        },
+        "vsPreview.refreshDelay": {
+          "type": "number",
+          "default": 250,
+          "minimum": 0,
+          "maximum": 5000,
+          "description": "Delay in milliseconds before automatic refresh."
+        },
+        "vsPreview.resourceRoot": {
+          "type": "string",
+          "enum": [
+            "file",
+            "workspace"
+          ],
+          "default": "file",
+          "description": "Allow resources from the HTML directory or the containing workspace. Workspace access permits preview code to load resources throughout that workspace folder."
+        }
+      }
     }
+  },
+  "activationEvents": [
+    "onWebviewPanel:vsPreview.htmlPreview"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check extension.js && node --check media/preview.js",
+    "package": "npx --yes --package @vscode/vsce vsce package"
   }
 }
