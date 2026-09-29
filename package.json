@@ -1,0 +1,49 @@
+{
+  "name": "vs-preview",
+  "displayName": "VS Preview",
+  "description": "Preview an HTML file in a browser-like panel.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "browser": "./extension.js",
+  "extensionKind": [
+    "workspace",
+    "ui"
+  ],
+  "capabilities": {
+    "virtualWorkspaces": true
+  },
+  "activationEvents": [
+    "onCommand:vsPreview.openPreview"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "vsPreview.openPreview",
+        "title": "Preview HTML"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "vsPreview.openPreview",
+          "when": "resourceLangId == html",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "vsPreview.openPreview",
+          "when": "resourceLangId == html",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}
