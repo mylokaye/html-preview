@@ -2,7 +2,7 @@
   "name": "vs-html-preview",
   "displayName": "VS HTML Preview",
   "description": "Live HTML previews in VS Code with responsive viewports, asset refresh, diagnostics and GitHub workspace support.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publisher": "MyloKaye",
   "icon": "icon.png",
   "repository": {

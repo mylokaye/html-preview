@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.6
+
+- Fix blank previews by validating forwarded VS Code messages by webview origin, including Electron host WindowProxy differences.
+- Add a controller regression check for host messages and unrelated message sources.
+
 ## 0.1.5
 
 - Update the GitHub and Marketplace descriptions to highlight live previews, responsive viewports, asset refresh, diagnostics and GitHub workspace support.

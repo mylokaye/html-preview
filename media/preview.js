@@ -25,7 +25,9 @@
       }
       return;
     }
-    if (event.source !== null && event.source !== window) return;
+    // Electron may expose the host source as a different WindowProxy. The host
+    // shares this webview's origin; sandboxed preview content has an opaque origin.
+    if (event.origin !== window.origin) return;
     const message = event.data;
     if (message?.type === 'state') { state = { uri: message.uri, viewport: message.viewport }; vscode.setState(state); resize(); }
     if (message?.type !== 'render') return;
