@@ -1,16 +1,16 @@
 {
   "name": "vs-html-preview",
   "displayName": "VS HTML Preview",
-  "description": "Preview HTML files in a browser-like VS Code panel, including GitHub remote workspaces.",
-  "version": "0.1.4",
+  "description": "Live HTML previews in VS Code with responsive viewports, asset refresh, diagnostics and GitHub workspace support.",
+  "version": "0.1.5",
   "publisher": "MyloKaye",
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mylokaye/vs-preview.git"
+    "url": "https://github.com/mylokaye/vs-html-preview.git"
   },
   "bugs": {
-    "url": "https://github.com/mylokaye/vs-preview/issues"
+    "url": "https://github.com/mylokaye/vs-html-preview/issues"
   },
   "homepage": "https://mylokaye.me",
   "galleryBanner": {

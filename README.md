@@ -2,9 +2,9 @@
 
 # VS HTML Preview
 
-Preview HTML files beside the editor in VS Code, including virtual GitHub workspaces.
+Live HTML previews beside the editor in VS Code, with responsive viewports, asset refresh, diagnostics and GitHub workspace support.
 
-[GitHub repository](https://github.com/mylokaye/vs-preview) · [Mylo Kaye's website](https://mylokaye.me)
+[GitHub repository](https://github.com/mylokaye/vs-html-preview) · [Mylo Kaye's website](https://mylokaye.me)
 
 ## Features
 
@@ -56,6 +56,18 @@ Open this folder in VS Code and press **F5** to launch an Extension Development 
 Before release, smoke-test local folders, a GitHub virtual workspace and VS Code for the Web: relative CSS/images/scripts, parent-directory assets in workspace mode, asset saves, manual mode, Restricted Mode, viewport sizing, diagnostics and restart restoration. Check ES modules against the documented sandbox limits.
 
 Package with `npx --yes --package @vscode/vsce vsce package`. VSIX builds and `.DS_Store` files are ignored; attach packages to releases rather than committing them.
+
+## Version history
+
+| Version | Changes |
+| --- | --- |
+| **0.1.5** | Updated GitHub and Marketplace descriptions, corrected repository and issue links, and added version history to this page and the changelog. Includes all 0.1.4 features. |
+| **0.1.4** | Debounced live updates, save/manual refresh modes, asset monitoring, configurable resource roots, responsive viewport presets, Explorer command, scroll and preview restoration, error feedback and Restricted Mode support. |
+| **0.1.3** | Added the listing banner, refined the icon, expanded discoverability metadata and added project/support links. |
+| **0.1.2** | Introduced VS HTML Preview branding, publisher metadata, icon, MIT licence and expanded usage documentation. |
+| **0.0.1** | Initial HTML preview with live HTML updates, relative resources and local/virtual workspace support. |
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed changes. This history records project versions; Marketplace availability can lag while a package is verified.
 
 ## License
 
