@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.7
+
+- Update the extension icon and README header image.
+
 ## 0.1.6
 
 - Fix blank previews by validating forwarded VS Code messages by webview origin, including Electron host WindowProxy differences.
