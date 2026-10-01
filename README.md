@@ -1,4 +1,4 @@
-![VS HTML Preview banner](images/html-preview.jpg)
+![VS HTML Preview banner](images/html-preview-banner.jpg)
 
 # VS HTML Preview
 
