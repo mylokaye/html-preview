@@ -2,7 +2,7 @@
   "name": "vs-html-preview",
   "displayName": "VFS HTML Preview",
   "description": "Preview HTML on VFS in VS Code with virtual workspace support, responsive viewports, asset refresh and diagnostics.",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "publisher": "MyloKaye",
   "icon": "icon.png",
   "repository": {
@@ -27,7 +27,7 @@
   ],
   "keywords": [
     "html",
-    "htm",
+    "vfs",
     "html preview",
     "html viewer",
     "preview",
@@ -72,7 +72,7 @@
       },
       {
         "command": "vsPreview.refresh",
-        "title": "Refresh HTML Preview"
+        "title": "Refresh Preview"
       }
     ],
     "menus": {
