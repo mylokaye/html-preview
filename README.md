@@ -1,6 +1,6 @@
 # Visual Studio Code HTML Preview
 
-Live HTML previews beside the editor in VS Code, with responsive viewports, asset refresh, diagnostics and GitHub workspace support.
+Live HTML previews beside the editor in VS Code, including virtual workspaces such as GitHub Repositories and VS Code for the Web. Supports `github://`, `vscode-vfs://` and other provider-backed URI schemes with responsive viewports, asset refresh and diagnostics.
 
 [GitHub repository](https://github.com/mylokaye/vs-html-preview) · [Mylo Kaye's website](https://mylokaye.me)
 
@@ -14,6 +14,7 @@ Live HTML previews beside the editor in VS Code, with responsive viewports, asse
 - Scroll restoration during trusted refreshes and preview restoration after VS Code restarts.
 - Resource, script and content-policy error feedback in trusted previews.
 - Static previews in Restricted Mode.
+- Virtual workspace support for provider-backed URI schemes such as `github://` and `vscode-vfs://`.
 
 ## Use
 
@@ -29,11 +30,13 @@ Choose a viewport in the toolbar. Fixed widths can scroll horizontally when wide
 | `vsPreview.refreshDelay` | `250` | Automatic refresh debounce in milliseconds (0–5000). |
 | `vsPreview.resourceRoot` | `file` | `file` permits the HTML directory; `workspace` permits its containing workspace folder, including sibling assets. |
 
-Asset saves and file-system changes refresh previews within the permitted root, including changes to files that the page may not reference. Unsaved external CSS/JavaScript edits are not included. File-system monitoring depends on the workspace provider; use Refresh if a virtual provider does not report changes.
+Asset saves and file-system changes refresh previews within the permitted root, including changes to files that the page may not reference. Unsaved external CSS/JavaScript edits are not included.
 
-## GitHub repositories and VS Code for the Web
+## Virtual workspaces and URI schemes
 
-Open a repository with GitHub Repositories or in VS Code for the Web, then run **Preview HTML**. Resource access uses VS Code URIs rather than local disk paths. Each workspace folder remains a separate resource boundary.
+Open a repository with GitHub Repositories, VS Code for the Web, or another virtual filesystem provider, then run **Preview HTML**. The extension uses VS Code `Uri` values rather than local disk paths, so virtual documents and their relative resources retain their provider scheme and authority. This includes schemes such as `github://` and `vscode-vfs://`, as well as other schemes registered by VS Code or an extension.
+
+The extension does not provide a virtual filesystem itself. The URI must already be readable through a VS Code workspace or filesystem provider. Each workspace folder remains a separate resource boundary. File-system refresh events also depend on the provider; use **Refresh HTML Preview** when a provider does not report changes.
 
 ## Compatibility
 
