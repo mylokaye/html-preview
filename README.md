@@ -7,6 +7,7 @@ Live HTML preview for Visual Studio Code. Preview HTML and HTM files beside the 
 ## Features
 
 - Preview `.html` and `.htm` files from the Command Palette, editor menus or Explorer.
+- Virtual workspace support for provider-backed URI schemes such as `github://` and `vscode-vfs://`.
 - Debounced HTML updates, refresh-on-save and manual refresh modes.
 - Refresh when saved assets change within the permitted resource root.
 - Responsive, mobile (390px), tablet (768px) and desktop (1440px) viewport presets.
@@ -14,7 +15,6 @@ Live HTML preview for Visual Studio Code. Preview HTML and HTM files beside the 
 - Scroll restoration during trusted refreshes and preview restoration after VS Code restarts.
 - Resource, script and content-policy error feedback in trusted previews.
 - Static previews in Restricted Mode.
-- Virtual workspace support for provider-backed URI schemes such as `github://` and `vscode-vfs://`.
 
 ## Quick start
 
