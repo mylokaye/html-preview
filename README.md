@@ -1,6 +1,6 @@
-# Visual Studio Code HTML Preview
+# VS Code HTML Preview
 
-Live HTML previews beside the editor in VS Code, including virtual workspaces such as GitHub Repositories and VS Code for the Web. Supports `github://`, `vscode-vfs://` and other provider-backed URI schemes with responsive viewports, asset refresh and diagnostics.
+Live HTML preview for Visual Studio Code. Preview HTML and HTM files beside the editor with live refresh, responsive viewports, asset loading, diagnostics, Restricted Mode, and virtual workspace support for GitHub Repositories and VS Code for the Web.
 
 [GitHub repository](https://github.com/mylokaye/vs-html-preview) · [Mylo Kaye's website](https://mylokaye.me)
 
@@ -16,9 +16,15 @@ Live HTML previews beside the editor in VS Code, including virtual workspaces su
 - Static previews in Restricted Mode.
 - Virtual workspace support for provider-backed URI schemes such as `github://` and `vscode-vfs://`.
 
-## Use
+## Quick start
 
-Open an HTML file and run **Preview HTML**, or right-click it in Explorer. The preview opens beside the editor. Running the command again brings the existing preview into view.
+1. Open an `.html` or `.htm` file.
+2. Run **Preview HTML** from the Command Palette, editor title bar, or Explorer context menu.
+3. Edit the file. The preview updates automatically by default.
+
+Run **Preview HTML** again to reveal the existing preview. Use the viewport menu to switch between responsive, mobile, tablet, and desktop sizes.
+
+## Preview behavior
 
 Choose a viewport in the toolbar. Fixed widths can scroll horizontally when wider than the panel. Refresh reruns page scripts and resets form/application state; scroll position is restored where possible. Restart restoration preserves the file and viewport, not page state or scroll position.
 
@@ -32,13 +38,13 @@ Choose a viewport in the toolbar. Fixed widths can scroll horizontally when wide
 
 Asset saves and file-system changes refresh previews within the permitted root, including changes to files that the page may not reference. Unsaved external CSS/JavaScript edits are not included.
 
-## Virtual workspaces and URI schemes
+## Virtual workspace support
 
 Open a repository with GitHub Repositories, VS Code for the Web, or another virtual filesystem provider, then run **Preview HTML**. The extension uses VS Code `Uri` values rather than local disk paths, so virtual documents and their relative resources retain their provider scheme and authority. This includes schemes such as `github://` and `vscode-vfs://`, as well as other schemes registered by VS Code or an extension.
 
 The extension does not provide a virtual filesystem itself. The URI must already be readable through a VS Code workspace or filesystem provider. Each workspace folder remains a separate resource boundary. File-system refresh events also depend on the provider; use **Refresh HTML Preview** when a provider does not report changes.
 
-## Compatibility
+## Limitations
 
 This is a static HTML preview, not a development server. Server-side templates, backend routes, root-relative site URLs and localhost HTTP/WebSocket services are not supported. Relative assets resolve against the HTML directory; existing `<base>` elements are replaced with the preview base.
 
