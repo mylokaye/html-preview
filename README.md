@@ -1,6 +1,4 @@
-![VS HTML Preview banner](images/html-preview-banner.jpg)
-
-# VS HTML Preview
+# Visual Studio Code HTML Preview
 
 Live HTML previews beside the editor in VS Code, with responsive viewports, asset refresh, diagnostics and GitHub workspace support.
 
