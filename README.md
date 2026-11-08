@@ -1,4 +1,4 @@
-# VS Code HTML Preview
+# VFS HTML Preview
 
 Live HTML preview for Visual Studio Code. Preview HTML and HTM files beside the editor with live refresh, responsive viewports, asset loading, diagnostics, Restricted Mode, and virtual workspace support for GitHub Repositories and VS Code for the Web.
 

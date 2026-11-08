@@ -1,8 +1,8 @@
 {
   "name": "vs-html-preview",
-  "displayName": "VS HTML Preview",
+  "displayName": "VFS HTML Preview",
   "description": "Live HTML previews in VS Code with virtual workspace support, responsive viewports, asset refresh and diagnostics.",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "publisher": "MyloKaye",
   "icon": "icon.png",
   "repository": {
