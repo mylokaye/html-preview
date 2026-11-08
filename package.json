@@ -1,7 +1,7 @@
 {
   "name": "vs-html-preview",
   "displayName": "VFS HTML Preview",
-  "description": "Live HTML previews in VS Code with virtual workspace support, responsive viewports, asset refresh and diagnostics.",
+  "description": "Preview HTML on VFS in VS Code with virtual workspace support, responsive viewports, asset refresh and diagnostics.",
   "version": "0.1.9",
   "publisher": "MyloKaye",
   "icon": "icon.png",
