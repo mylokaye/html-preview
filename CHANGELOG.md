@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.8
+
+- Highlight virtual workspace and provider-backed URI support in the README and Marketplace description.
+- Improve README quick-start instructions, structure and search discoverability.
+
 ## 0.1.7
 
 - Update the extension icon and README header image.

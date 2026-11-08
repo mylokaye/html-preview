@@ -68,6 +68,7 @@ Package with `npx --yes --package @vscode/vsce vsce package`. VSIX builds and `.
 
 | Version | Changes |
 | --- | --- |
+| **0.1.8** | Highlight virtual workspace support and improve README quick-start guidance. |
 | **0.1.7** | Updated the extension icon and header image. |
 | **0.1.6** | Fix blank previews caused by rejecting forwarded VS Code host messages. |
 | **0.1.5** | Updated GitHub and Marketplace descriptions, corrected repository and issue links, and added version history to this page and the changelog. Includes all 0.1.4 features. |
