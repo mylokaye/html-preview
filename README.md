@@ -11,7 +11,7 @@ Live HTML preview for Visual Studio Code. Preview HTML and HTM files beside the 
 - Debounced HTML updates, refresh-on-save and manual refresh modes.
 - Refresh when saved assets change within the permitted resource root.
 - Responsive, mobile (390px), tablet (768px) and desktop (1440px) viewport presets.
-- Refresh button and **Refresh HTML Preview** command for the active preview.
+- Refresh button and **Refresh Preview** command for the active preview.
 - Scroll restoration during trusted refreshes and preview restoration after VS Code restarts.
 - Resource, script and content-policy error feedback in trusted previews.
 - Static previews in Restricted Mode.
